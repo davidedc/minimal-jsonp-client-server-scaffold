@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+
+$.ajax({
+    type: 'GET',
+    url: './jsonp/something.json',
+    dataType: 'jsonp',
+    success: function(returnedJSONObject) {
+        // debugger;
+        alert(JSON.stringify(returnedJSONObject));
+}
+});
+
+</script>
+
+<p>Making a jsonp request. An alert should show the returnes JSON object.</p>
+
+</body>
+</html>
